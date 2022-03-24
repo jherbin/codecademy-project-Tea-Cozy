@@ -1,0 +1,30 @@
+* {
+  font-family: Helvetica;
+  font-size: 22px;
+  color: seashell;
+  background-color: black;
+  opacity: 0.9;
+}
+
+#logo {
+  align-self: center;
+  justify-self: start;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+nav {
+  justify-items: flex-start;
+}
+
+nav > ul {
+  display: inline-flex;
+  list-style: none;
+}
+
+a {
+}
