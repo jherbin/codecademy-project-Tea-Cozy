@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
 * {
+  margin: 0;
   font-family: Helvetica;
   font-size: 22px;
   color: seashell;
@@ -7,23 +10,28 @@
 }
 
 #logo {
-  align-self: center;
-  justify-self: start;
+  font-family: 'Great Vibes', cursive;
+  height: 50px;
+  margin: 10px;
+  font-size: 2rem;
 }
 
 header {
+  position: fixed;
+  width: 100vw;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
 }
 
 nav {
-  justify-items: flex-start;
+  height: 69px;
 }
 
-nav > ul {
+.navItem {
   display: inline-flex;
-  list-style: none;
+  justify-content: space-around;
 }
 
 a {
