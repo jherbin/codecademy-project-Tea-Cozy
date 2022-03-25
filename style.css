@@ -9,11 +9,22 @@
   opacity: 0.9;
 }
 
+body {
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 #logo {
   font-family: 'Great Vibes', cursive;
   height: 50px;
-  margin: 10px;
+  margin: 9px 0 10px 10px;
   font-size: 2rem;
+  align-self: center;
 }
 
 header {
@@ -23,16 +34,129 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid seashell;
+  z-index: 1;
 }
 
 nav {
   height: 69px;
+  height: 100%;
 }
 
 .navItem {
   display: inline-flex;
   justify-content: space-around;
+  margin-right: 10px;
 }
 
-a {
+#screen1 {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background-image: url('img/img-mission-background.jpg');
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+h4 {
+  display: flex;
+  justify-content: center;
+}
+
+#ourMission {
+  height: 100px;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#screen2 {
+  margin-top: 80px;
+  width: 1200px;
+  max-height: 600px;
+}
+
+#teaOfTheMonth {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  max-height: 200px;
+  max-width: 300px;
+  margin: 10px 20px;
+}
+
+#screen3 {
+  margin-top: 100px;
+  background-image: url('/img/img-locations-background.jpg');
+  object-fit: contain;
+  display: flex;
+  height: 500px;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#locationsHeader {
+  background-color: hsla(100, 0%, 0%, 0);
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+#locations {
+  background-color: hsla(100, 0%, 0%, 0);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.location {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin: 15px 20px;
+  line-height: 2.5;
+  padding: 15px 0;
+  opacity: 1;
+}
+
+.location > p {
+  opacity: 1;
+}
+
+.location > h3 {
+  opacity: 1;
+}
+
+footer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 2.5;
+}
+
+#copyright {
+  font-size: large;
+  margin-bottom: 30px;
 }
