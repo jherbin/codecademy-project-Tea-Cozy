@@ -127,6 +127,7 @@ img {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  opacity: 1;
 }
 
 .location {
